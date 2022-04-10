@@ -59,7 +59,7 @@ const parts = Object.keys(db);
         </div>
       </div>
         <div id="aboutUs" className={aboutUsStyles.container}>
-          <Image src="/personalImg.png" width="400" height="400" alt="personal Img"/>
+          <Image src="/personalImg.jpg" width="400" height="400" alt="personal Img"/>
           <div className={aboutUsStyles.content}>
             <h1>من نحن</h1>
             <p>أنا الطالب علي محمد سلمان أدرس في جامعة الأمام الكاظم (عليه السلام) قسم هندسة تقنيات الحاسوب. هذا الموقع يهدف الى توفير البيئة التعليمية لبرنامج الأكسل لتجعلك قادر على فهم و تعلم دوال الأكسل بسهولة و بسرعة عن طريق توفير ملفات و فيديوات يتم فيها شرح اساسيات و مبادئ تعلم دوال الأكسل. تم الأشراف من قبل أ.م.د مؤيد حنون سلمان</p>
