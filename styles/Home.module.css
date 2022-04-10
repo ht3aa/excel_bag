@@ -1,116 +1,203 @@
-.container {
-  padding: 0 2rem;
+.hero {
+    width: 100%;
+    padding-bottom: 200px;
+    display: flex;
+    position: relative;
+}
+.hero i {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    color: white;
+    font-size: 30px;
+    animation: upDown 2s ease-in-out infinite;
 }
 
-.main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.bgImg {
+    width: 100%;
+    background: url("/bgImg.jpg") fixed center center no-repeat;
+    background-size: cover;
+    position: relative;
 }
 
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
+@keyframes upDown {
+    0% {
+        transform: translate(-50%, 0);
+    }
+    50% {
+        transform: translate(-50%, -50px);
+    }
+    100% {
+        transform: translate(-50%, 0);
+    }
 }
 
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
+.overlayer {
+    width: 100%;
+    padding: 125px 0 15px 0;
+    background: linear-gradient(179.58deg, rgba(0, 0, 0, 0.4) -6.04%, #000000 99.64%);
 }
 
-.title a {
-  color: #0070f3;
-  text-decoration: none;
+.excelLogo {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
+.mainContent {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    direction: rtl;
+    padding-right: 50px;
+    justify-content: center;
+    color: white;
+}
+
+.mainContent h4 {
+    width: 70%;
+    font-weight: normal;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.mainContent h5 {
+    font-weight: normal;
+}
+.mainContent a {
+    width: max-content;
+}
+.mainContent button {
+    width: 120px;
+}
+
+@media only screen and (max-width: 700px) {
+    .overlayer {
+        padding: 100px 0px 0 0;
+    }
+    .excelLogo {
+        display: none;
+    }
+    
+    .mainContent {
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .mainContent h4 {
+        margin: 25px auto;
+    }
+    .mainContent a {
+        margin: 0 auto;
+    }
+}
+
+
+
+/* =============================================== */
+
+.mainContainer {
+    width: 95%;
+    margin: 20px auto;
 }
 
 .title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
+    width: max-content;
+    margin: 40px auto;
+    padding: 10px;
+    color: white;
+    border-bottom: 2px solid white;
 }
 
-.title,
-.description {
-  text-align: center;
-}
-
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
+.cardContainer {
+    width: 70%;
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    direction: rtl;
 }
 
 .card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
+    width: 280px;
+    background-color: white;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 8px rgba(102, 102, 102, 0.5);
 }
-
 .card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+.card:focus {
+    box-shadow: 0px 0px 0px rgba(102, 102, 102, 0.5);
+}
+@media only screen and (max-width: 760px) {
+    .cardContainer {
+        justify-content: center;
+    }
 }
 
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
-
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
-
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
-}
-
-@media (max-width: 600px) {
-  .grid {
+.cardImg {
     width: 100%;
-    flex-direction: column;
-  }
+    height: 150px;
+    background: url("/lecture.jpg");
+
+}
+
+.cardContent {
+    width: 100%;
+    padding: 20px;
+    min-width: 175px;
+    direction: rtl;
+    text-align: center;
+
+}
+
+.cardContent p {
+    margin: 15px 0;
+}
+
+.cardContent button {
+    font-size: 1rem;
+    padding: 10px 15px;
+}
+
+.cardOverlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(24, 92, 55, 0.75);;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+@media only screen and (max-width: 410px) {
+    .cardContainer {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+}
+
+.departmentContent {
+    width: 400px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    padding-bottom: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.departmentImg {
+    border-radius: 50%;
+}
+
+@media only screen and (max-width: 480px) {
+    .departmentContent {
+        width: 80%;
+        margin: 0 auto;
+    }
+
 }
