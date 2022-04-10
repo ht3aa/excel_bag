@@ -9,6 +9,9 @@ const parts = Object.keys(db);
   
   return (
     <>
+                                      تم الأعداد من قبل الطالب علي محمد سلمان
+                
+                  بأشراف أ. م. د. مؤيد حنون سلمان
       <div className={homeStyles.bgImg}>
         <div className={homeStyles.overlayer}>
           <header className={homeStyles.hero}>
@@ -16,12 +19,12 @@ const parts = Object.keys(db);
                 <Image src="/excelImg.png" width={250} height={230} alt="excel logo"/>
               </div>
               <div className={homeStyles.mainContent}>
-                <h1>أحترافك لدوال الأكسل 
-أصبح سهل معنا</h1>
-                <h4>                  تم الأعداد من قبل الطالب علي محمد سلمان
-                  بأشراف أ. م. د. مؤيد حنون سلمان
+                <h1>إحترافك لدوال الأكسل 
+أصبح سهلاً معنا</h1>
+                <h4>
+                  تم الأعداد من قبل الطالب: علي محمد سلمان<br />بأشراف: أ. م. د. مؤيد حنون سلمان
                 </h4>
-                <a href="#files"><button><h5>أبدأ الأن</h5></button></a>
+                <a href="#files"><button><h5>لنبدأ</h5></button></a>
               </div>
             <i className="fa-solid fa-arrow-down"></i>
           </header>
