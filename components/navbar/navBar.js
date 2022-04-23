@@ -1,20 +1,18 @@
 import navBarStyles from "../../styles/Navbar.module.css";
-import Image from "next/image";
 import toggleHamAnimation from "./hamAnimationController";
-import { useRef } from "react";
-import { useState } from "react";
-import makeItActive from "./makeItActive";
+import { useRef, useState, useEffect } from "react";
 import Link from "next/dist/client/link";
-import { useEffect } from "react";
+import Image from "next/image";
+
 
 export default function NavBar() {
-    const [showNavigationList, setShowNavigationList] = useState(false);
+    const [showMobileNavigationList, setShowMobileNavigationList] = useState(false);
     const hamContainerRef = useRef();
     const ulListRef = useRef();
 
     function toggleHamAndShowHam() {
         toggleHamAnimation(hamContainerRef.current);
-        setShowNavigationList(!showNavigationList);
+        setShowMobileNavigationList(!showMobileNavigationList);
     }
 
     useEffect(() => {
@@ -37,9 +35,7 @@ export default function NavBar() {
                 <Image src="/university.png" alt="Logo" width={50} height={50}/> 
                 <p>كلية الأمام الكاظم/قسم هندسة تقنيات الحاسوب</p>       
             </div>
-            <ul ref={ulListRef} onClick={(e) => {
-               
-            }} className={navBarStyles.navigationList}>
+            <ul ref={ulListRef} className={navBarStyles.navigationList}>
                 <Link href='/#aboutUs'><li><p className={navBarStyles.navigationListParagraph}>من نحن</p></li></Link>
                 <Link href='/'><li><p className={navBarStyles.navigationListParagraph}>الصفحة الرئيسية</p></li></Link>
             </ul>
@@ -50,7 +46,7 @@ export default function NavBar() {
                     </div>
                 <div className="hide"></div>
             </div>
-            {showNavigationList && <nav className={navBarStyles.mobileNavigationList}>
+            {showMobileNavigationList && <nav className={navBarStyles.mobileNavigationList}>
                 <ul className={navBarStyles.mobileNavigationListUl}>
                     <Link href='/'><li onClick={toggleHamAndShowHam}><p className={navBarStyles.navigationListParagraph}>الصفحة الرئيسية</p></li></Link>
                     <Link href='/#aboutUs'><li onClick={toggleHamAndShowHam}><p className={navBarStyles.navigationListParagraph}>من نحن</p></li></Link>

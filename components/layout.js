@@ -3,7 +3,6 @@ import { useState } from "react";
 import Navbar from "./navbar/navBar";
 
 
-
 export default function Layout({ children }) {
     const [showUpButton, setShowUpButton] = useState(false);
 

@@ -9,9 +9,6 @@ const parts = Object.keys(db);
   
   return (
     <>
-                                      تم الأعداد من قبل الطالب علي محمد سلمان
-                
-                  بأشراف أ. م. د. مؤيد حنون سلمان
       <div className={homeStyles.bgImg}>
         <div className={homeStyles.overlayer}>
           <header className={homeStyles.hero}>
@@ -20,7 +17,8 @@ const parts = Object.keys(db);
               </div>
               <div className={homeStyles.mainContent}>
                 <h1>إحترافك لدوال الأكسل 
-أصبح سهلاً معنا</h1>
+                  أصبح سهلاً معنا
+                </h1>
                 <h4>
                   تم الأعداد من قبل الطالب: علي محمد سلمان<br />بأشراف: أ. م. د. مؤيد حنون سلمان
                 </h4>
@@ -50,7 +48,6 @@ const parts = Object.keys(db);
                     })}
                   </div>
                 </div>
-
               )
             })}    
           </main>
@@ -67,8 +64,8 @@ const parts = Object.keys(db);
             <h1>من نحن</h1>
             <p>أنا الطالب علي محمد سلمان أدرس في جامعة الأمام الكاظم (عليه السلام) قسم هندسة تقنيات الحاسوب. هذا الموقع يهدف الى توفير البيئة التعليمية لبرنامج الأكسل لتجعلك قادر على فهم و تعلم دوال الأكسل بسهولة و بسرعة عن طريق توفير ملفات و فيديوات يتم فيها شرح اساسيات و مبادئ تعلم دوال الأكسل. تم الأشراف من قبل أ.م.د مؤيد حنون سلمان</p>
             <div>
-                <a href="https://instagram.com/alimuhammed9" target="_blank" rel="noreferrer"><i className="fab fa-instagram"></i></a>
-                <a href="https://t.me/Ali_M14" target="_blank" rel="noreferrer"><i className="fab fa-telegram"></i></a>
+              <a href="https://instagram.com/alimuhammed9" target="_blank" rel="noreferrer"><i className="fab fa-instagram"></i></a>
+              <a href="https://t.me/Ali_M14" target="_blank" rel="noreferrer"><i className="fab fa-telegram"></i></a>
             </div>
           </div>
         </div>
