@@ -3,10 +3,10 @@ import aboutUsStyles from "../styles/AboutUs.module.css";
 import Image from "next/image";
 import { db }  from "../data/db";
 import Link from 'next/link';
-export default function Home() {
 
-const parts = Object.keys(db);
-  
+export default function Home() {
+  const parts = Object.keys(db);
+
   return (
     <>
       <div className={homeStyles.bgImg}>
